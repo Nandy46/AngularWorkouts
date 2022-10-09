@@ -1,0 +1,13 @@
+<ng-container>
+  <div *ngFor="let item of GetPersonaldata">
+    <p> First Name : {{ item.FirstName }}</p>
+    <p> Last Name : {{ item.LastName }}</p>
+    <p> Email Id : {{ item.Email }}</p>
+    <p> Phone Number :{{ item.Phone }}</p>
+  </div>
+  <div *ngFor="let items of GetAddressData">
+    <p> Street : {{ items.Street }}</p>
+    <p> City : {{ items.City }}</p>
+    <p> State : {{ items.State }}</p>
+  </div>
+</ng-container>

@@ -1,0 +1,30 @@
+<ng-container class="p-5">
+    <div class="mb-3 row p-4">
+      <label for="First Name" class="col-sm-2 col-form-label">First Name</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control" [(ngModel)]="PersonalData.FirstName">
+      </div>
+    </div>
+    <div class="mb-3 row p-4">
+      <label for="Last Name" class="col-sm-2 col-form-label">Last Name</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control" [(ngModel)]="PersonalData.LastName" >
+      </div>
+    </div>
+    <div class="mb-3 row p-4">
+      <label for="Email" class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control" [(ngModel)]="PersonalData.Email">
+      </div>
+    </div>
+    <div class="mb-3 row p-4">
+      <label for="Phone Number" class="col-sm-2 col-form-label">Phone Number</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control" [(ngModel)]="PersonalData.Phone">
+      </div>
+    </div>
+</ng-container>
+
+<div class="btn btn-primary">
+  <a (click)="EmitPersonalData(PersonalData)">Next</a>
+</div>
